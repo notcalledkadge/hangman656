@@ -21,6 +21,6 @@ def guess():
     # elif len(letter) > 1 or type(letter) == int:
    else:
     return print("Oops! That is not a valid input.")
-# guess()
+guess()
    
    
