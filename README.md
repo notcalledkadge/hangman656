@@ -10,7 +10,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 ## Description
 The aim of this project was to take everything that I had learnt during this course and build a version of the Hangman game using it. The biggest hurdle that I had to overcome was formatting of different functions. The amount of times that I had a infinitely-running While loop was hilarious. Using online resources, the course's resources and some books that I was able to find online, I have been able to produce a game that runs, and works well.
 
-## Installation Instructions
+## Installation Instructions
 Plug and play. Run the code and enjoy yourself!
 In the terminal or command prompt, use the command "python /path/to/your/script.py" (replace "/path/to/your/" with the actual path to your script). This allows you to execute the Python Script from any location, providing the full path for direct access!
 
