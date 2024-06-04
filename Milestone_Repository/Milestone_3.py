@@ -1,5 +1,4 @@
 import random 
-
 # def word_list():
 #    fruits = ["banana", "strawberry", "orange", "apples", "kiwi"]
 #    print(fruits)
@@ -11,6 +10,7 @@ import random
 #    print(random_fruit)
 # # word()
 
+### Iteravely check if the input is a valid guess.
 def guess():
  while True:
   letter = input("").lower()
@@ -20,6 +20,7 @@ def guess():
    print("Invalid letter. Please, enter a single alphabetical character.")
 # guess()
 
+### Check whether the guess is in the word.
 def letter_checker():
   fruits = ["banana", "strawberry", "orange", "apples", "kiwi"]
   random_fruit = random.choice(fruits)
@@ -32,12 +33,7 @@ def letter_checker():
    print("Sorry!" ,letter, "was not in the word. What a bummer!")
 # letter_checker()
 
- 
-# def letter_checker():
-#   fruits = ["banana", "strawberry", "orange", "apples", "kiwi"]
-# #   print(random_fruit)
-#   letter = input("")
-
+### Create functions to run the checks.
 def check_guess():
   checked_letter = guess().lower()
   fruits = ["banana", "strawberry", "orange", "apples", "kiwi"]
