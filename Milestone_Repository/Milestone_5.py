@@ -1,7 +1,7 @@
 
 import random
 
-word_list = ["black","dumbledore","hagrid","lupin","malfoy","mcgonagall","potter","snape"]
+word_list = ["black","dumbledore","hagrid","lupin","malfoy","mcgonagall","potter","snape","weasley","flitwick","sprout","wood","dursley","brown","chang","crabbe","goyle","fudge","lestrange","moody","filch","crouch"]
 word = random.choice(word_list)
 word_guessed = ['_' for _ in word]
 guess_list = [""]
@@ -21,9 +21,9 @@ class Hangman:
         global word_guessed, num_letters
         if guess in self.word:
             print("Good guess!", guess, "is in the word.")
-            for i in range(len(self.word)):
-                if self.word[i] == guess:
-                    word_guessed = word_guessed[:i] + [guess] + word_guessed[i+1:]
+            for letter in range(len(self.word)):
+                if self.word[letter] == guess:
+                    word_guessed = word_guessed[:letter] + [guess] + word_guessed[letter+1:]
             self.num_letters -= 1
             print ("Letters remaining", self.num_letters)
         else:
@@ -57,7 +57,7 @@ def play_game():
     game = Hangman()
     while True:
          if game.num_lives == 0:
-          print ("You lost!")
+          print ("You lost! The word was:",word)
           break
          elif game.num_letters > 0:
           game.ask_for_input() 
